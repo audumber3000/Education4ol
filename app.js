@@ -49,6 +49,18 @@ app.use(express.static("public"));
 app.get("/", function(req, res){
     res.render("home" , {CurrentUser:req.user});
 });
+app.get("/courses/class11-12", function(req, res){
+    res.render("courses/class11-12");
+});
+app.get("/courses/class8-10", function(req, res){
+    res.render("courses/class8-10");
+});
+app.get("/courses/enginnering", function(req, res){
+    res.render("courses/enginnering");
+});
+app.get("/courses/medical", function(req, res){
+    res.render("courses/medical");
+});
 
 app.get("/offer" , function(req,res){
 	
