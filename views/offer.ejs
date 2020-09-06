@@ -1,0 +1,52 @@
+<%- include("./partials/header") %>
+<h1>
+	welcome to hot offers!!
+</h1>
+
+
+
+<div class="container">
+	
+
+<div class="card">
+  <div class="card-header">
+    Featured
+  </div>
+  <div class="card-body">
+	  <img src="https://d3nn873nee648n.cloudfront.net/900x600/13332/220-SM468163.jpg" alt="..." class="rounded float-left img-thumbnail">
+    <h5 class="card-title float-center">Special title treatment</h5>
+    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+
+	
+	
+<div class="card">
+  <div class="card-header">
+    Featured
+  </div>
+  <div class="card-body">
+	  <img src="https://d3nn873nee648n.cloudfront.net/900x600/13332/220-SM468163.jpg" alt="..." class="rounded float-left img-thumbnail">
+    <h5 class="card-title">Special title treatment</h5>
+    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+
+
+	
+	</div>
+
+
+<% if(!CurrentUser){ %>
+ <h2>
+	 no userfound
+</h2>
+<% }else{ %>
+	<h2>
+	<%= CurrentUser.username %>
+</h2>
+<% }  %>
+
+
